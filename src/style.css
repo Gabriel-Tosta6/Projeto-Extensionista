@@ -1,0 +1,219 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo-container img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main section h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main section p {
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+main section hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+aside.contact-info {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+aside.contact-info h3 {
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+aside.contact-info p {
+    color: white;
+    margin-bottom: 15px;
+    display: flex; /* Mantém o display flex */
+    align-items: center; /* Alinha os itens flexíveis verticalmente ao centro */
+    margin-left: 10%; /* Ajuste o recuo geral para o bloco de texto */
+    margin-right: 10%;
+    box-sizing: border-box;
+}
+
+aside.contact-info p img {
+    height: 24px;
+    width: auto;
+    flex-shrink: 0;
+    margin-right: 15px; /* Espaço entre o ícone e o texto forte */
+}
+
+aside.contact-info p strong {
+    flex-shrink: 0;
+    width: 170px; /* Largura fixa para os rótulos STRONG (ajuste este valor para o mais longo) */
+    text-align: left; /* Agora alinhamos à esquerda dentro de sua largura */
+    margin-right: 5px; /* Pequeno espaço entre o strong e o conteúdo */
+}
+
+aside.contact-info p span,
+aside.contact-info p a {
+    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
+    text-align: left; /* Garante que o texto comece da esquerda */
+    word-break: break-word; /* Permite quebrar palavras longas se necessário */
+}
+
+aside.contact-info p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+aside.contact-info p a:hover {
+    text-decoration: underline;
+}
+
+aside.contact-info hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 0 auto 15px auto;
+    width: 50%;
+}
+
+footer p {
+    color: gainsboro;
+    font-size: 0.9em;
+}
+
+main.contact-page-content {
+    text-align: center;
+}
+
+.visit-us-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 960px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.visit-us-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.visit-us-section strong {
+    color: #007bff;
+}
+
+.visit-us-section iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.about-us-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 960px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-us-section h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us-section ul.about-us-list {
+    list-style-type: disc;
+    color: white;
+    padding-left: 40px;
+    margin: 0;
+}
+
+.about-us-section ul.about-us-list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.about-us-section hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
