@@ -219,23 +219,48 @@ main.contact-page-content {
 }
 
 a.container-logo-animado {
-    display: block; 
-    position: relative;
-    width: 600px; 
+    display: block;
+    width: 450px;
     margin: 0 auto;
+    position: relative; 
+}
+
+.logo-parte-superior {
     animation: fadeInDown 1.5s ease-out forwards;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.logo-topo-img {
+    display: block;
+    width: 100%;
 }
+
+.logo-retangulos-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    height: 25px !important;
+    width: auto !important;
+    max-width: 100%;
+    display: block;
+}
+
+.retangulo-azul, .retangulo-branco, .retangulo-vermelho {
+    animation-name: fadeInUp;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+}
+
+.retangulo-azul { animation-delay: 0.8s; }
+.retangulo-branco { animation-delay: 1.0s; }
+.retangulo-vermelho { animation-delay: 1.2s; }
 
 .logo-brilho {
     position: absolute;
@@ -245,16 +270,15 @@ a.container-logo-animado {
     display: block; 
     opacity: 0; 
     animation-name: piscar-farois;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
-    transform: translateX(100px); 
+    animation-delay: 1,9s; 
+    transform: translateX(24px); 
 }
 
-@keyframes piscar-farois {
-    0%{opacity:0} 20%{opacity:0} 30%{opacity:1} 40%{opacity:0} 50%{opacity:1} 60%{opacity:0} 100%{opacity:0}
-}
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes piscar-farois { 0%{opacity:0} 30%{opacity:0} 40%{opacity:1} 50%{opacity:0} 60%{opacity:1} 70%{opacity:0} 100%{opacity:0} }
 
 .logo-base {
     width: 100%;
