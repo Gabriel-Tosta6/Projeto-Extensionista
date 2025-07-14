@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Serviços - Eurotec Atellier Mecanique</title>
+
+    <style>
+        a.container-logo-animado {
+            display: block; 
+            position: relative;
+            width: 450px; 
+            margin: 0 auto; 
+        }
+
+        .logo-base {
+            width: 100%;
+            display: block; 
+        }
+        
+        .logo-brilho {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0; 
+            animation: piscar-farois 2.5s ease-in-out forwards;
+            transform: translateX(24px);
+        }
+
+        @keyframes piscar-farois {
+            0%   { opacity: 0; }
+            20%  { opacity: 0; }
+            30%  { opacity: 1; }
+            40%  { opacity: 0; }
+            50%  { opacity: 1; }
+            60%  { opacity: 0; }
+            100% { opacity: 0; }
+        }
+    </style>
+    </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html" class="container-logo-animado" title="Voltar ao Início">
+            <img src="imagens/logo.jpg" alt="Logo da Oficina Eurotec" class="logo-base">
+            <img src="imagens/logo-brilho.png" aria-hidden="true" class="logo-brilho">
+        </a>
+        <h1>Eurotec Atellier Mécanique</h1>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="services-section">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma gama completa de serviços especializados para garantir a máxima performance e segurança do seu veículo Peugeot ou Citroën.</p>
+        <hr>
+        <ul class="services-list">
+            <li><strong>Diagnóstico Eletrônico Completo:</strong> Leitura de falhas de injeção, ABS, Airbag e outros módulos com scanner original.</li><br>
+            <li><strong>Revisão Programada:</strong> Troca de óleo, filtros, velas e todos os itens conforme o manual do fabricante.</li><br>
+            <li><strong>Motor:</strong> Reparo de motores, troca de correia dentada e ponto.</li><br>
+            <li><strong>Freios:</strong> Troca de pastilhas, discos, fluido de freio e manutenção do sistema ABS.</li><br>
+            <li><strong>Suspensão:</strong> Troca de amortecedores, molas, pivôs e alinhamento.</li><br>
+            <li><strong>Ar Condicionado:</strong> Manutenção, recarga de gás e higienização completa do sistema.</li><br>
+            <li><strong>Câmbio:</strong> Manutenção e reparo de transmissões manuais e automáticas.</li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="contact-info">
+      <hr>
+      <h3>Informações de Contato</h3>
+      <hr>
+      <p>
+        <img src="imagens/icons/endereco.png" alt="Ícone de endereço">
+        <strong>Endereço:</strong> <span>Av: Cleanto Vieira Gonçalves, n°445 | Roosevelt | Cep: 38400-233 | Uberlândia-MG</span>
+      </p>
+      <hr>
+      <p>
+        <img src="imagens/icons/telefone.png" alt="Ícone de telefone">
+        <strong>Telefone:</strong> <span>(34) 99243-4323</span>
+      </p>
+      <hr>
+      <p>
+        <img src="imagens/icons/email.png" alt="Ícone de e-mail">
+        <strong>Email:</strong> <a href="mailto:administrativo@eurotec.com.br">administrativo@eurotec.com.br</a>
+      </p>
+      <hr>
+      <p>
+        <img src="imagens/icons/relogio.png" alt="Ícone de relógio">
+        <strong>Horário de Funcionamento:</strong> <span>Segunda a sexta, das 8h às 18h</span>
+      </p>
+    </aside>
+
+    <footer>
+      <hr>
+      <p>© 2025 Eurotec Centro Automotivo Ltda Me - Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
