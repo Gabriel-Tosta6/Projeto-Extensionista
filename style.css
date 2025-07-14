@@ -221,7 +221,7 @@ main.contact-page-content {
 a.container-logo-animado {
     display: block; 
     position: relative;
-    width: 450px; 
+    width: 600px; 
     margin: 0 auto;
     animation: fadeInDown 1.5s ease-out forwards;
 }
@@ -249,7 +249,7 @@ a.container-logo-animado {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 1.5s;
-    transform: translateX(24px); 
+    transform: translateX(100px); 
 }
 
 @keyframes piscar-farois {
