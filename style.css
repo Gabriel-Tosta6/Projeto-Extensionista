@@ -94,9 +94,9 @@ aside.contact-info h3 {
 aside.contact-info p {
     color: white;
     margin-bottom: 15px;
-    display: flex; /* Mantém o display flex */
-    align-items: center; /* Alinha os itens flexíveis verticalmente ao centro */
-    margin-left: 10%; /* Ajuste o recuo geral para o bloco de texto */
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
     margin-right: 10%;
     box-sizing: border-box;
 }
@@ -105,21 +105,21 @@ aside.contact-info p img {
     height: 24px;
     width: auto;
     flex-shrink: 0;
-    margin-right: 15px; /* Espaço entre o ícone e o texto forte */
+    margin-right: 15px;
 }
 
 aside.contact-info p strong {
     flex-shrink: 0;
-    width: 170px; /* Largura fixa para os rótulos STRONG (ajuste este valor para o mais longo) */
-    text-align: left; /* Agora alinhamos à esquerda dentro de sua largura */
-    margin-right: 5px; /* Pequeno espaço entre o strong e o conteúdo */
+    width: 170px;
+    text-align: left;
+    margin-right: 5px;
 }
 
 aside.contact-info p span,
 aside.contact-info p a {
-    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
-    text-align: left; /* Garante que o texto comece da esquerda */
-    word-break: break-word; /* Permite quebrar palavras longas se necessário */
+    flex-grow: 1;
+    text-align: left;
+    word-break: break-word;
 }
 
 aside.contact-info p a {
@@ -216,4 +216,90 @@ main.contact-page-content {
     border: none;
     border-top: 1px solid #444;
     margin: 30px 0;
+}
+
+a.container-logo-animado {
+    display: block; 
+    position: relative;
+    width: 450px; 
+    margin: 0 auto;
+    animation: fadeInDown 1.5s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-brilho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block; 
+    opacity: 0; 
+    animation-name: piscar-farois;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    transform: translateX(24px); 
+}
+
+@keyframes piscar-farois {
+    0%{opacity:0} 20%{opacity:0} 30%{opacity:1} 40%{opacity:0} 50%{opacity:1} 60%{opacity:0} 100%{opacity:0}
+}
+
+.logo-base {
+    width: 100%;
+    display: block; 
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+.gallery-item {
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item .caption {
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background-color: #2b2b2b;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
