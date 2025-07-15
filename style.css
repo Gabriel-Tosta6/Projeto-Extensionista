@@ -456,3 +456,183 @@ a.container-logo-animado {
         transform: scale(1);
     }
 }
+
+.marcas-parceiras {
+    padding: 40px 0;
+    text-align: center;
+}
+.marcas-parceiras h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+.marcas-parceiras {
+    padding: 40px 0;
+    text-align: center;
+}
+.marcas-parceiras h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+.carrossel { 
+    width: 100%; 
+    overflow: hidden; 
+    -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent); 
+    mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent); 
+}
+.carrossel-track { 
+    display: flex; 
+    align-items: center; 
+    width: calc(200px * 24); 
+    animation: scroll 70s linear infinite; 
+}
+.carrossel:hover .carrossel-track { 
+    animation-play-state: paused; 
+}
+.carrossel-item {
+    width: 200px;
+    padding: 10px 15px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.carrossel-item img { 
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+.carrossel-item:hover img { 
+    transform: scale(1.2); 
+}
+
+@keyframes scroll { 
+    from { 
+        transform: translateX(0); 
+    } 
+    to { 
+        transform: translateX(calc(-200px * 12)); 
+    } 
+}
+
+.servico-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.servico-card:hover {
+    transform: scale(1.05);
+}
+
+.servico-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.4s ease;
+}
+
+.servico-card:hover .servico-imagem {
+    filter: blur(5px) brightness(60%);
+}
+
+.servico-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.servico-card:hover .servico-overlay {
+    opacity: 1;
+}
+
+.servico-icone {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.servico-titulo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    text-align: center;
+    padding: 0 10px;
+}
+
+.sobre-nos-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre-nos-imagem {
+    flex-basis: 40%;
+    flex-shrink: 0;
+}
+
+.sobre-nos-imagem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sobre-nos-texto {
+    flex-basis: 60%;
+}
+
+.sobre-nos-texto h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.sobre-nos-texto p {
+    text-align: left;
+}
+
+.diferenciais {
+    padding: 20px 0;
+}
+
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.diferencial-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.diferencial-icone {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.diferencial-item h3 {
+    margin-bottom: 10px;
+    color: #008cff;
+}
+
+.diferencial-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
