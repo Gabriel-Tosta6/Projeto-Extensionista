@@ -638,3 +638,51 @@ a.container-logo-animado {
     font-size: 0.9rem;
     color: #ccc;
 }
+
+@media (max-width: 768px) {
+
+    a.container-logo-animado {
+        width: 90%;
+        max-width: 380px;
+    }
+
+    .retangulo img {
+        height: 22px;
+    }
+
+    .sobre-nos-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sobre-nos-texto h2,
+    .sobre-nos-texto p {
+        text-align: center;
+    }
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    main section h2 {
+        font-size: 1.6rem;
+    }
+
+    .sticky-header-content {
+        padding: 8px 15px;
+    }
+
+    .menu-hamburguer-container {
+        top: 20px;
+        right: 20px;
+    }
+}
